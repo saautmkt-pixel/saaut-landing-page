@@ -161,27 +161,56 @@ section {
 }
 
 /* Trust Bar */
-.trust-bar {
-    padding: 40px 0;
+/* Trust Bar Marquee */
+.marquee-container {
+    margin-left: -24px;
+    margin-right: -24px;
     background: rgba(255, 255, 255, 0.03);
-    text-align: center;
-    border-radius: 16px;
+    padding: 30px 0;
+    overflow: hidden;
+    margin-bottom: 60px;
 }
 
-.trust-bar p {
+.marquee-container p {
+    text-align: center;
     font-size: 14px;
+    color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: rgba(255, 255, 255, 0.5);
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
-.logos-flex {
+.marquee {
     display: flex;
-    justify-content: space-around;
+    overflow: hidden;
+    user-select: none;
+}
+
+.marquee-content {
+    display: flex;
+    gap: 80px;
+    animation: scroll 40s linear infinite;
+    min-width: 100%;
     align-items: center;
-    filter: grayscale(1);
+    padding-left: 80px;
+}
+
+.marquee-content img {
+    height: 40px;
+    width: auto;
+    filter: grayscale(1) brightness(1.5);
     opacity: 0.6;
+    transition: all 0.3s ease;
+}
+
+.marquee-content img:hover {
+    filter: grayscale(0) brightness(1);
+    opacity: 1;
+}
+
+@keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
 }
 
 /* Pillars / Methodology */
