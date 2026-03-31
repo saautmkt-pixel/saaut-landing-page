@@ -9,9 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <script>
+        function handleImageError(img) {
+            const parent = img.parentElement;
+            const name = img.alt || "Logo";
+            const div = document.createElement('div');
+            div.className = 'logo-fallback';
+            div.innerText = name;
+            parent.replaceChild(div, img);
+        }
+    </script>
     <div class="glow-blob blob-1"></div>
     <div class="glow-blob blob-2"></div>
     <header>
@@ -28,33 +39,33 @@
         <div class="layout-wrapper">
             <!-- Content Column -->
             <main>
-                <section class="hero">
-                    <h1>Engenharia de Receita para <span>Crescimento B2B</span></h1>
+                <section class="hero" data-aos="fade-up">
+                    <h1>Engenharia de Receita para <span class="text-gradient">Crescimento B2B</span></h1>
                     <p>Desenvolvemos e implantamos metodologias de vendas completas para empresas que buscam escalas de
                         receita previsíveis e lucrativas.</p>
                 </section>
 
-                <div class="trust-bar marquee-container">
+                <div class="trust-bar marquee-container" data-aos="fade-in">
                     <p>Empresas que confiam na nossa engenharia</p>
                     <div class="marquee">
                         <div class="marquee-content">
-                            <img src="assets/logo-estadao.png" alt="Estadão">
-                            <img src="assets/logo-logical.png" alt="Logical IT">
-                            <img src="assets/logo-sme.png" alt="SME">
-                            <img src="assets/logo-ith.png" alt="Faculdade ITH">
-                            <img src="assets/logo-more.png" alt="Môre">
+                            <img src="assets/logo-estadao.png" alt="Estadão" onerror="handleImageError(this)">
+                            <img src="assets/logo-logical.png" alt="Logical IT" onerror="handleImageError(this)">
+                            <img src="assets/logo-sme.png" alt="SME" onerror="handleImageError(this)">
+                            <img src="assets/logo-ith.png" alt="Faculdade ITH" onerror="handleImageError(this)">
+                            <img src="assets/logo-more.png" alt="Môre" onerror="handleImageError(this)">
                             <!-- Duplicated for seamless scroll -->
-                            <img src="assets/logo-estadao.png" alt="Estadão">
-                            <img src="assets/logo-logical.png" alt="Logical IT">
-                            <img src="assets/logo-sme.png" alt="SME">
-                            <img src="assets/logo-ith.png" alt="Faculdade ITH">
-                            <img src="assets/logo-more.png" alt="Môre">
+                            <img src="assets/logo-estadao.png" alt="Estadão" onerror="handleImageError(this)">
+                            <img src="assets/logo-logical.png" alt="Logical IT" onerror="handleImageError(this)">
+                            <img src="assets/logo-sme.png" alt="SME" onerror="handleImageError(this)">
+                            <img src="assets/logo-ith.png" alt="Faculdade ITH" onerror="handleImageError(this)">
+                            <img src="assets/logo-more.png" alt="Môre" onerror="handleImageError(this)">
                         </div>
                     </div>
                 </div>
 
-                <section id="metodologia">
-                    <h2 class="section-title">Estrutura Proprietária: As 13 Variáveis de Vendas</h2>
+                <section id="metodologia" data-aos="fade-up">
+                    <h2 class="section-title">Estrutura Proprietária: <span class="text-gradient">As 13 Variáveis</span> de Vendas</h2>
                     <p style="margin-bottom: 30px;">Mais uma estrutura do que uma metodologia: "As 13 Variáveis de Vendas"</p>
                     <div class="pillars-grid variables-grid">
                         <div class="pillar-item">
@@ -83,8 +94,8 @@
                     </div>
                 </section>
 
-                <section class="solution-dark" id="solucoes">
-                    <h2 class="section-title" style="color: white;">Uma Boutique de Negócios</h2>
+                <section class="solution-dark" id="solucoes" data-aos="fade-up">
+                    <h2 class="section-title" style="color: white;"><span class="text-gradient">Uma Boutique</span> de Negócios</h2>
                     <div class="boutique-list-container">
                         <ul class="boutique-list">
                             <li>Estudo de Geração de Receita</li>
@@ -101,33 +112,33 @@
                     </div>
                 </section>
 
-                <section id="sobre">
-                    <h2 class="section-title">Sobre a SAAUT</h2>
+                <section id="sobre" data-aos="fade-up">
+                    <h2 class="section-title">Sobre a <span class="text-gradient">SAAUT</span></h2>
                     <p style="font-size: 18px; margin-bottom: 30px;">Somos uma consultoria especializada em acelerar o crescimento de empresas que atuam no modelo B2B consultivo por meio da geração estruturada de receita. Atuamos para impulsionar resultados de vendas apoiando nossos clientes a fazer mais negócios, com bons clientes, de maneira previsível, sustentável e diminuindo riscos.</p>
                     <img src="assets/hero.png" alt="Reunião Estratégica"
                         style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-md);">
                 </section>
 
-                <section id="empresas-grid">
-                    <h2 class="section-title">Empresas que Acreditam Nesta Proposta</h2>
+                <section id="empresas-grid" data-aos="fade-up">
+                    <h2 class="section-title">Empresas que <span class="text-gradient">Acreditam</span></h2>
                     <div class="logos-grid-large">
-                        <img src="assets/logo-tritone.png" alt="Tritone">
-                        <img src="assets/logo-brivia.png" alt="Brivia">
-                        <img src="assets/logo-sme.png" alt="SME">
-                        <img src="assets/logo-move2health.png" alt="Move2Health">
-                        <img src="assets/logo-logun.png" alt="Logun">
-                        <img src="assets/logo-pom.png" alt="POM">
-                        <img src="assets/logo-abstartups.png" alt="Abstartups">
-                        <img src="assets/logo-alphagraphics.png" alt="AlphaGraphics">
-                        <img src="assets/logo-logical.png" alt="Logical IT">
-                        <img src="assets/logo-goall.png" alt="Go'all">
-                        <img src="assets/logo-neby.png" alt="Neby Academy">
-                        <img src="assets/logo-estadao.png" alt="Estadão">
-                        <img src="assets/logo-ith.png" alt="Faculdade ITH">
-                        <img src="assets/logo-more.png" alt="Môre">
-                        <img src="assets/logo-wink.png" alt="Wink">
-                        <img src="assets/logo-cbn.png" alt="CBN">
-                        <img src="assets/logo-lydians.png" alt="Lydians">
+                        <img src="assets/logo-tritone.png" alt="Tritone" onerror="handleImageError(this)">
+                        <img src="assets/logo-brivia.png" alt="Brivia" onerror="handleImageError(this)">
+                        <img src="assets/logo-sme.png" alt="SME" onerror="handleImageError(this)">
+                        <img src="assets/logo-move2health.png" alt="Move2Health" onerror="handleImageError(this)">
+                        <img src="assets/logo-logun.png" alt="Logun" onerror="handleImageError(this)">
+                        <img src="assets/logo-pom.png" alt="POM" onerror="handleImageError(this)">
+                        <img src="assets/logo-abstartups.png" alt="Abstartups" onerror="handleImageError(this)">
+                        <img src="assets/logo-alphagraphics.png" alt="AlphaGraphics" onerror="handleImageError(this)">
+                        <img src="assets/logo-logical.png" alt="Logical IT" onerror="handleImageError(this)">
+                        <img src="assets/logo-goall.png" alt="Go'all" onerror="handleImageError(this)">
+                        <img src="assets/logo-neby.png" alt="Neby Academy" onerror="handleImageError(this)">
+                        <img src="assets/logo-estadao.png" alt="Estadão" onerror="handleImageError(this)">
+                        <img src="assets/logo-ith.png" alt="Faculdade ITH" onerror="handleImageError(this)">
+                        <img src="assets/logo-more.png" alt="Môre" onerror="handleImageError(this)">
+                        <img src="assets/logo-wink.png" alt="Wink" onerror="handleImageError(this)">
+                        <img src="assets/logo-cbn.png" alt="CBN" onerror="handleImageError(this)">
+                        <img src="assets/logo-lydians.png" alt="Lydians" onerror="handleImageError(this)">
                     </div>
                 </section>
 
@@ -190,7 +201,14 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+
         document.getElementById('lead-form').addEventListener('submit', async function(e) {
             e.preventDefault();
             const btn = document.getElementById('submit-btn');

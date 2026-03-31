@@ -120,7 +120,14 @@ header {
 
 /* Sections */
 section {
-    padding: 100px 0;
+    padding: 120px 0;
+}
+
+.text-gradient {
+    background: var(--gradient-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .section-title {
@@ -399,10 +406,34 @@ section {
 
 /* Footer */
 footer {
-    background: var(--navy-dark);
+    background: #050a14;
     color: var(--white);
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Logo Fallback */
+.logo-fallback {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.logos-grid-large .logo-fallback {
+    background: #f8fafc;
+    border-color: #e2e8f0;
+    color: #475569;
 }
 
 /* Logos Grid Large */
