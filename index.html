@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAUT | Engenharia de Receita e Consultoria de Vendas B2B</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <header>
+        <div class="container header-flex">
+            <img src="assets/logo.png" alt="SAAUT Logo" class="logo">
+            <nav style="display: none;"> <!-- Hidden for succinct LP -->
+                <a href="#metodologia">Metodologia</a>
+                <a href="#solucoes">Soluções</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="layout-wrapper">
+            <!-- Content Column -->
+            <main>
+                <section class="hero">
+                    <h1>Engenharia de Receita para <span>Crescimento B2B</span></h1>
+                    <p>Desenvolvemos e implantamos metodologias de vendas completas para empresas que buscam escalas de
+                        receita previsíveis e lucrativas.</p>
+                </section>
+
+                <div class="trust-bar" style="margin-left: -24px; margin-right: -24px;">
+                    <p>Empresas que confiam na nossa engenharia</p>
+                    <div class="logos-flex">
+                        <span>[Logo 1]</span>
+                        <span>[Logo 2]</span>
+                        <span>[Logo 3]</span>
+                        <span>[Logo 4]</span>
+                    </div>
+                </div>
+
+                <section id="metodologia">
+                    <h2 class="section-title">Nossa Metodologia</h2>
+                    <div class="pillars-grid">
+                        <div class="pillar-item">
+                            <h3>01. Diagnóstico de Gaps</h3>
+                            <p>Análise cirúrgica do seu funil comercial, identificando gargalos de conversão e perda de
+                                eficiência.</p>
+                        </div>
+                        <div class="pillar-item">
+                            <h3>02. Processos e Playbooks</h3>
+                            <p>Desenho detalhado da jornada de compra e criação de manuais de execução para o time.</p>
+                        </div>
+                        <div class="pillar-item">
+                            <h3>03. Sales Intelligence</h3>
+                            <p>Uso estratégico de dados e ferramentas para prospecção ativa e enriquecimento de leads.
+                            </p>
+                        </div>
+                        <div class="pillar-item">
+                            <h3>04. Gestão e Cultura</h3>
+                            <p>Implantação de rituais de acompanhamento e treinamento contínuo focado em performance.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="solution-dark" id="solucoes">
+                    <h2 class="section-title" style="color: white;">Soluções Executivas</h2>
+                    <div class="solution-grid">
+                        <div>
+                            <h3 style="color: var(--cyan-primary); margin-bottom: 12px;">Consultoria Full Service</h3>
+                            <p>Acompanhamento de ponta a ponta na estruturação do seu departamento comercial.</p>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--cyan-primary); margin-bottom: 12px;">Estruturação de Outbound</h3>
+                            <p>Criação e escala de máquinas de prospecção ativa (cold calling e social selling).</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="sobre">
+                    <h2 class="section-title">Sobre a SAAUT</h2>
+                    <p style="font-size: 18px; margin-bottom: 30px;">A SAAUT nasceu da necessidade de conectar estratégia executiva com execução técnica. Não entregamos apenas relatórios, entregamos a operação de vendas rodando.</p>
+                    <img src="assets/hero.png" alt="Reunião Estratégica"
+                        style="width: 100%; border-radius: 16px; box-shadow: var(--shadow-md);">
+                </section>
+
+                <section id="faq">
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <div class="faq-item">
+                        <h4>A SAAUT atua em quais segmentos?</h4>
+                        <p>Focamos em empresas B2B, principalmente tecnologia, serviços corporativos e indústria.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Quanto tempo dura um projeto?</h4>
+                        <p>Os projetos variam de 3 a 8 meses, dependendo da maturidade da operação comercial.</p>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Sticky Sidebar Form -->
+            <aside class="sticky-sidebar">
+                <div class="form-card">
+                    <h2>Agenda um Diagnóstico</h2>
+                    <span class="subtitle">Descubra como escalar sua receita agora</span>
+                    <form id="lead-form">
+                        <div class="input-block">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+                        </div>
+                        <div class="input-block">
+                            <label for="email">E-mail Corporativo</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="input-block">
+                            <label for="phone">Telefone / WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="input-block">
+                            <label for="company_size">Tamanho do Time de Vendas</label>
+                            <select id="company_size" name="company_size" required>
+                                <option value="" disabled selected>Selecione...</option>
+                                <option value="1-5">1 a 5 vendedores</option>
+                                <option value="6-15">6 a 15 vendedores</option>
+                                <option value="16-50">16 a 50 vendedores</option>
+                                <option value="50+">Mais de 50 vendedores</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="cta-button" id="submit-btn">SOLICITAR CONTATO</button>
+                    </form>
+                    <div id="success-msg" style="display: none; text-align: center; margin-top: 30px;">
+                        <p style="color: var(--navy-dark); font-weight: 800; font-size: 20px;">Recebemos seu contato!
+                        </p>
+                        <p style="color: var(--text-muted);">Nossos especialistas falarão com você em breve.</p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 SAAUT Strategic Advisory. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('lead-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            const btn = document.getElementById('submit-btn');
+            const originalText = btn.innerText;
+            btn.innerText = 'ENVIANDO...';
+            btn.disabled = true;
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+                const response = await fetch('/api/register-lead', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    this.style.display = 'none';
+                    document.getElementById('success-msg').style.display = 'block';
+                } else {
+                    alert('Erro no envio. Tente novamente.');
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                }
+            } catch (error) {
+                alert('Erro de conexão.');
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        });
+    </script>
+</body>
+
+</html>
