@@ -435,20 +435,59 @@ footer {
 @media (max-width: 1024px) {
     .layout-wrapper {
         grid-template-columns: 1fr;
+        padding: 0 40px;
     }
 
     .sticky-sidebar {
         position: relative;
         top: 0;
+        margin-top: 40px;
+    }
+
+    .solution-dark {
+        padding: 40px 20px;
     }
 }
 
+
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 40px;
+    section {
+        padding: 60px 0;
     }
 
     .pillars-grid {
         grid-template-columns: 1fr;
+    }
+
+    .boutique-list {
+        grid-template-columns: 1fr;
+    }
+
+    .marquee-content {
+        gap: 40px;
+        animation: scroll 20s linear infinite;
+    }
+
+    .marquee-content img {
+        height: 30px;
+    }
+
+    .logos-grid-large {
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: clamp(32px, 8vw, 40px);
+    }
+
+    .form-card {
+        padding: 24px;
+    }
+
+    .pillar-item {
+        padding: 24px;
     }
 }
