@@ -208,6 +208,20 @@ section {
 .pillar-item h3 {
     font-size: 20px;
     margin-bottom: 16px;
+    color: var(--cyan-primary);
+}
+
+.variable-list {
+    list-style: none;
+    padding: 0;
+}
+
+.variable-list li {
+    margin-bottom: 12px;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+    position: relative;
+    padding-left: 0;
 }
 
 /* Solution Dark Section */
@@ -223,10 +237,30 @@ section {
     color: var(--white);
 }
 
-.solution-grid {
+.boutique-list-container {
+    display: block;
+}
+
+.boutique-list {
+    list-style: none;
+    padding: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px 40px;
+}
+
+.boutique-list li {
+    font-size: 18px;
+    color: var(--white);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.boutique-list li::before {
+    content: '→';
+    margin-right: 10px;
+    color: var(--cyan-primary);
 }
 
 /* Sticky Form Container - MAXIMUM EVIDENCE */
@@ -335,6 +369,26 @@ footer {
     color: var(--white);
     padding: 60px 0;
     text-align: center;
+}
+
+/* Logos Grid Large */
+.logos-grid-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 30px;
+    align-items: center;
+    background: white;
+    padding: 60px 40px;
+    border-radius: 24px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.logos-grid-large span {
+    color: #1e293b;
+    font-weight: 800;
+    font-size: 18px;
+    opacity: 0.8;
 }
 
 /* Responsive */
