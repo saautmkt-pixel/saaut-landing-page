@@ -129,6 +129,9 @@ section {
     position: relative;
     padding-bottom: 16px;
     line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .section-title::after {
