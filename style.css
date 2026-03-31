@@ -1,8 +1,9 @@
 :root {
     --navy-dark: #0a192f;
     --navy-blue: #112240;
-    --cyan-primary: #00d2ff;
-    --cyan-hover: #33e0ff;
+    --cyan-primary: #0ACF83;
+    --cyan-hover: #08bd77;
+    --gradient-brand: linear-gradient(135deg, #0ACF83 0%, #1e3a8a 100%);
     --white: #ffffff;
     --gray-light: #f8fafc;
     --gray-border: #e2e8f0;
