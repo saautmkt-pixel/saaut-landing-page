@@ -22,7 +22,7 @@ export default async function handler(req: any, res: any) {
 
         // 1. Salvar no Supabase (Note: Assumes table 'leads' exists or needs to be created)
         const { error: supaError } = await supabase
-            .from('leads')
+            .from(''leads_consultoria'')
             .insert([{ name, email, phone, company_size }]);
 
         if (supaError) {
